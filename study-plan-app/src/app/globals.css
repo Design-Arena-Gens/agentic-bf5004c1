@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #f6f8fb;
+}
+
+body {
+  @apply bg-slate-100 text-slate-900;
+}
+
+.gradient-bg {
+  background: radial-gradient(
+      circle at top left,
+      rgba(45, 124, 255, 0.15),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(17, 47, 110, 0.2),
+      transparent 55%
+    );
+}
